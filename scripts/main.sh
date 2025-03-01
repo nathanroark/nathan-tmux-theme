@@ -113,7 +113,7 @@ main()
   magenta='#F075B7'   # Red
   light_purple='#FDF0ED'                # Highlight Background
   dark_purple='#FDF0ED'                # Highlight Background
-  gray='#FDF0ED'     # Background
+  # gray='#FDF0ED'     # Background
 
 
 
