@@ -105,15 +105,15 @@ main()
   # https://github.com/Gogh-Co/Gogh/blob/master/themes/Horizon%20Bright.yml
   white='#1c1e26 '        # Foreground Text
   # dark_gray='#FADAD1'                # Highlight Background
-  #
   dark_gray='#1c1e26 '        # Foreground Text
-  gray='#FDF0ED'     # Background
+  gray='#FADAD1'     # Background
   # green='#1EB980'         # Green
   green='#07DA8C'         # Light Green
   light_magenta='#EE64AE'  # Red
   magenta='#F075B7'   # Red
-  light_purple='#FADAD1'                # Highlight Background
-  dark_purple='#FADAD1'                # Highlight Background
+  light_purple='#FDF0ED'                # Highlight Background
+  dark_purple='#FDF0ED'                # Highlight Background
+  gray='#FDF0ED'     # Background
 
 
 
