@@ -104,16 +104,17 @@ main()
   # Horizon Bright Color Palette (light mode)
   # https://github.com/Gogh-Co/Gogh/blob/master/themes/Horizon%20Bright.yml
   white='#1c1e26 '        # Foreground Text
-  # dark_gray='#1c1e26 '        # Foreground Text
-  dark_gray='#FDF0ED'     # Background
+  dark_gray='#1c1e26 '        # Foreground Text
   gray='#FDF0ED'     # Background
 
   light_purple='#1EAEAE'                # Highlight Background
-  dark_purple='#1D8991'                # Highlight Background
+
+  dark_purple='#1EAEAE'                # Highlight Background
+  # dark_purple='#1D8991'                # Highlight Background
   # light_purple='#FADAD1'                # Highlight Background
   # dark_purple='#FADAD1'                # Highlight Background
-  green='#1EB980'         # Green
-  # green='#07DA8C'         # Light Green
+  # green='#1EB980'         # Green
+  green='#07DA8C'         # Light Green
   orange='#FFB454'        # Orange
   red='#FF5370'           # Red
   # light_magenta='#EE64AE'  # Red
