@@ -106,14 +106,13 @@ main()
   white='#1c1e26 '        # Foreground Text
   # dark_gray='#FADAD1'                # Highlight Background
   dark_gray='#1c1e26 '        # Foreground Text
-  gray='#FADAD1'     # Background
+  gray='#FDF0ED'     # Background
   # green='#1EB980'         # Green
   green='#07DA8C'         # Light Green
   light_magenta='#EE64AE'  # Red
   magenta='#F075B7'   # Red
-  light_purple='#FDF0ED'                # Highlight Background
-  dark_purple='#FDF0ED'                # Highlight Background
-  # gray='#FDF0ED'     # Background
+  light_purple='#FADAD1'                # Highlight Background
+  dark_purple='#FADAD1'                # Highlight Background
 
 
 
