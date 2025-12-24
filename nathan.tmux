@@ -38,7 +38,7 @@ time_format=$(tmux_get @tmux_power_time_format '%T')
 date_format=$(tmux_get @tmux_power_date_format '%F')
 
 # short for Theme-Colour
-TC=$(tmux_get '@tmux_power_theme' 'snow')
+TC=$(tmux_get '@tmux_power_theme' 'cold')
 case $TC in
     'gold' )
         TC='#ffb86c'
@@ -58,6 +58,9 @@ case $TC in
     'snow' )
         TC='#fffafa'
         ;;
+    'cold' )
+        TC='#aaa2a2'
+        ;;
     'coral' )
         TC='#ff7f50'
         ;;
@@ -69,11 +72,16 @@ case $TC in
         ;;
 esac
 
-G0=$(tmux_get @tmux_power_g0 "#262626")
-G1=$(tmux_get @tmux_power_g1 "#303030")
-G2=$(tmux_get @tmux_power_g2 "#3a3a3a")
-G3=$(tmux_get @tmux_power_g3 "#444444")
-G4=$(tmux_get @tmux_power_g4 "#626262")
+# G0=$(tmux_get @tmux_power_g0 "#262626")
+# G1=$(tmux_get @tmux_power_g1 "#303030")
+# G2=$(tmux_get @tmux_power_g2 "#3a3a3a")
+# G3=$(tmux_get @tmux_power_g3 "#444444")
+# G4=$(tmux_get @tmux_power_g4 "#626262")
+G0=$(tmux_get @tmux_power_g0 "#121212")
+G1=$(tmux_get @tmux_power_g1 "#202020")
+G2=$(tmux_get @tmux_power_g2 "#2a2a2a")
+G3=$(tmux_get @tmux_power_g3 "#333333")
+G4=$(tmux_get @tmux_power_g4 "#424242")
 
 # Status options
 tmux_set status-interval 1
