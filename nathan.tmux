@@ -26,9 +26,10 @@ session_icon="$(tmux_get '@tmux_power_session_icon' '')"
 user_icon="$(tmux_get '@tmux_power_user_icon' '')"
 time_icon="$(tmux_get '@tmux_power_time_icon' '')"
 date_icon="$(tmux_get '@tmux_power_date_icon' '')"
-show_user="$(tmux_get @tmux_power_show_user true)"
-show_host="$(tmux_get @tmux_power_show_host true)"
-show_session="$(tmux_get @tmux_power_show_session true)"
+show_user="$(tmux_get @tmux_power_show_user false)"
+show_host="$(tmux_get @tmux_power_show_host false)"
+show_session="$(tmux_get @tmux_power_show_session false)"
+show_right_side="$(tmux_get @tmux_power_show_session false)"
 show_upload_speed="$(tmux_get @tmux_power_show_upload_speed false)"
 show_download_speed="$(tmux_get @tmux_power_show_download_speed false)"
 show_web_reachable="$(tmux_get @tmux_power_show_web_reachable false)"
@@ -122,7 +123,10 @@ tmux_set status-left "$LS"
 # Right side of status bar
 tmux_set status-right-bg "$G0"
 tmux_set status-right-length 150
-RS="#[fg=$G2]$larrow#[fg=$TC,bg=$G2] $time_icon $time_format #[fg=$TC,bg=$G2]$larrow#[fg=$G0,bg=$TC] $date_icon $date_format "
+RS=""
+if "$show_right_side"; then
+    RS="#[fg=$G2]$larrow#[fg=$TC,bg=$G2] $time_icon $time_format #[fg=$TC,bg=$G2]$larrow#[fg=$G0,bg=$TC] $date_icon $date_format "
+fi
 if "$show_download_speed"; then
     RS="#[fg=$G1,bg=$G0]$larrow#[fg=$TC,bg=$G1] $download_speed_icon #{download_speed} $RS"
 fi
